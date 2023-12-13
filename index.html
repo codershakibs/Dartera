@@ -46,10 +46,12 @@
     <link rel="stylesheet" href="assets/css/nioicon.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- jQuery (necessary for jQuery plugins) -->
     <script src="assets/js/jquery-3.6.1.min.js"></script>
+
 </head>
 
 <body>
@@ -87,21 +89,22 @@
                         <a class="nav-link" aria-current="page" href="#">Über uns</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Kontakt</a>
+                        <a class="nav-link dropdown-toggle" aria-current="page" href="#">Kontakt</a>
                     </li>
                 </ul>
                 <div class="d-flex align-items-center gap-4">
                     <div class="nav-divider">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Leistungen <svg width="18" height="18"
+                                <a class="nav-link" aria-current="page" href="#">Leistungen
+                                </a>
+                                <!-- <svg width="18" height="18"
                                         viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M3.75 6.75H14.25L9.53025 11.4698C9.3896 11.6104 9.19887 11.6893 9 11.6893C8.80113 11.6893 8.6104 11.6104 8.46975 11.4698L3.75 6.75Z"
                                             fill="#B5D5F4" />
                                     </svg>
-                                </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div>
@@ -109,7 +112,7 @@
                         <a class="nav-call text-decoration-none" href="tel:+41 31 552 00 72">+41 31 552 00 72</a>
                     </div>
 
-                    <div>
+                    <div class="">
                         <a class="nav-btn text-decoration-none" href="">Termin vereinbaren</a>
                     </div>
                 </div>
@@ -184,13 +187,9 @@
                     faszinieren wird.</p>
             </div>
 
-
-
-
-
             <div class="row mt-4">
                 <div class="col-lg-7">
-                    <div class="web-right-col d-flex gap-2">
+                    <div class="web-right-col d-flex gap-2 h-100">
                         <div class="align-bottom">
                             <h4>Webdesign </h4>
                             <p class="web-sub">Unvergessliche User Experience bieten</p>
@@ -207,8 +206,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="web-right-col">
+                <div class="col-lg-5">
+                    <div class="web-right-col h-100">
                         <div>
                             <h4>Maintenance</h4>
                             <p class="web-sub">Unterhalt, damit Ihre Website läuft</p>
@@ -227,6 +226,597 @@
 
                 </div>
             </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-7">
+                    <div class="web-right-col d-flex gap-2 h-100">
+                        <div class="align-bottom">
+                            <h4>seo</h4>
+                            <p class="web-sub">Unvergessliche User Experience bieten</p>
+                            <a class="text-decoration-none web-link" href="">Einzelheiten <svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
+                                        fill="#015EA5" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <img class="img-fluid" src="assets/img/seo-right-img.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="web-right-col h-100">
+                        <div>
+                            <h4>sea</h4>
+                            <p class="web-sub">Unterhalt, damit Ihre Website läuft</p>
+                            <a class="text-decoration-none web-link" href="">Einzelheiten <svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
+                                        fill="#015EA5" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <img class="img-fluid Maintenance-img" src="assets/img/seo-left-img.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div>
+                            <h4>Content</h4>
+                            <p>SEO-Content, der verkauft</p>
+                            <a class="text-decoration-none web-link" href="">Einzelheiten <svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
+                                        fill="#015EA5" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="mt-5 text-center">
+                            <img src="assets/img/content.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div>
+                            <h4>Branding</h4>
+                            <p>SEO-Content, der verkauft</p>
+                            <a class="text-decoration-none web-link" href="">Einzelheiten <svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
+                                        fill="#015EA5" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="mt-5 text-center">
+                            <img src="assets/img/branding.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div>
+                            <h4>animation</h4>
+                            <p>SEO-Content, der verkauft</p>
+                            <a class="text-decoration-none web-link" href="">Einzelheiten <svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
+                                        fill="#015EA5" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="animation-card text-center">
+                            <img src="assets/img/animation.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="portfolio-wrapper">
+        <div class="container">
+            <div class="text-center portfolio-top">
+                <h6 class="h6-custom">Portfolio</h6>
+                <h2 class="text-center m-auto pt-3">Erfolgreiche Referenzen für führende Brands.</h2>
+                <p class="pt-3 pb-3 w-50 m-auto">Mit Freude präsentieren wir einen tieferen Einblick in die
+                    Herausforderungen, die wir jeden Tag
+                    meistern, um Erfolgsgeschichten für Unternehmen wie Ihres zu schreiben.</p>
+            </div>
+
+            <div class="portfolio-banner pt-5 d-flex align-items-center">
+                <div>
+                    <img src="assets/img/portfolio-banner-left.svg" alt="">
+                </div>
+                <div>
+                    <h5>Eine Auswahl von Case Studies</h5>
+                    <p class="portfolio-1">Dartera hat uns geholfen, unseren Umsatz um mehr als 150% zu steigern.</p>
+                    <p class="portfolio-2">Wir bieten eine vollständige Online-Marketing-Dienstleistung, die zu höheren
+                        Umsätzen, mehr
+                        Nutzern und der Verbesserung des Benutzerservices führt.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-slider mt-5">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="portfolio-cards">
+                                <div class="position-relative">
+                                    <div class="div">
+                                        <img class="w-100" src="assets/img/portfolio-slider-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio-abs position-absolute d-flex justify-content-between">
+                                        <h6>Webdesign</h6>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.00933 15.5892L7.8335 14.4108L12.241 9.99999L7.8335 5.58916L9.01266 4.41083L13.4168 8.82166C13.7293 9.13421 13.9048 9.55805 13.9048 9.99999C13.9048 10.4419 13.7293 10.8658 13.4168 11.1783L9.00933 15.5892Z"
+                                                fill="#002448" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-cards">
+                                <div class="position-relative">
+                                    <div class="">
+                                        <img class="w-100" src="assets/img/portfolio-slider-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio-abs position-absolute d-flex justify-content-between">
+                                        <h6>Webdesign</h6>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.00933 15.5892L7.8335 14.4108L12.241 9.99999L7.8335 5.58916L9.01266 4.41083L13.4168 8.82166C13.7293 9.13421 13.9048 9.55805 13.9048 9.99999C13.9048 10.4419 13.7293 10.8658 13.4168 11.1783L9.00933 15.5892Z"
+                                                fill="#002448" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-cards">
+                                <div class="position-relative">
+                                    <div class="">
+                                        <img class="w-100" src="assets/img/portfolio-slider-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio-abs position-absolute d-flex justify-content-between">
+                                        <h6>Webdesign</h6>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.00933 15.5892L7.8335 14.4108L12.241 9.99999L7.8335 5.58916L9.01266 4.41083L13.4168 8.82166C13.7293 9.13421 13.9048 9.55805 13.9048 9.99999C13.9048 10.4419 13.7293 10.8658 13.4168 11.1783L9.00933 15.5892Z"
+                                                fill="#002448" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-cards">
+                                <div class="position-relative">
+                                    <div class="">
+                                        <img class="w-100" src="assets/img/portfolio-slider-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio-abs position-absolute d-flex justify-content-between">
+                                        <h6>Webdesign</h6>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.00933 15.5892L7.8335 14.4108L12.241 9.99999L7.8335 5.58916L9.01266 4.41083L13.4168 8.82166C13.7293 9.13421 13.9048 9.55805 13.9048 9.99999C13.9048 10.4419 13.7293 10.8658 13.4168 11.1783L9.00933 15.5892Z"
+                                                fill="#002448" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-cards">
+                                <div class="position-relative">
+                                    <img class="w-100" src="assets/img/portfolio-slider-1.svg" alt="">
+                                    <div class="portfolio-abs position-absolute d-flex justify-content-between">
+                                        <h6>Webdesign</h6>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.00933 15.5892L7.8335 14.4108L12.241 9.99999L7.8335 5.58916L9.01266 4.41083L13.4168 8.82166C13.7293 9.13421 13.9048 9.55805 13.9048 9.99999C13.9048 10.4419 13.7293 10.8658 13.4168 11.1783L9.00933 15.5892Z"
+                                                fill="#002448" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-cards">
+                                <div class="position-relative">
+                                    <img class="w-100" src="assets/img/portfolio-slider-1.svg" alt="">
+                                    <div class="portfolio-abs position-absolute d-flex justify-content-between">
+                                        <h6>Webdesign</h6>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.00933 15.5892L7.8335 14.4108L12.241 9.99999L7.8335 5.58916L9.01266 4.41083L13.4168 8.82166C13.7293 9.13421 13.9048 9.55805 13.9048 9.99999C13.9048 10.4419 13.7293 10.8658 13.4168 11.1783L9.00933 15.5892Z"
+                                                fill="#002448" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="first-btn text-center mt-5">
+                <a href="">Entdecken <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
+                            fill="#002448" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referenzen  -->
+    <section class="Referenzen-wrapper">
+        <div class="container">
+            <div class="Referenzen-top d-flex align-items-center justify-content-between">
+                <div>
+                    <h6 class="h6-custom">Referenzen</h6>
+                    <h2 class="Referenzen-top-h2">Was unsere Kunden sagen</h2>
+                </div>
+                <div>
+                    <img src="assets/img/Referenzen-top-img.svg" alt="">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="swiper refe-Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="referenzen-cards text-center">
+                                <div>
+                                    <img src="assets/img/Mask group.png" alt="">
+                                </div>
+                                <div class="pt-4">
+                                    <p class="cards-p1">Dartera helped us to increase our revenue by more than 150%</p>
+                                    <p class="cards-p2 pt-3">Ker spitzen oompaloomp kaputt poopsie corkin underbite
+                                        haben
+                                        weiner, poopsie
+                                        keepin underbite
+                                        dummkopf ich thinken der der zur oompaloom.</p>
+                                </div>
+                                <div class="reviews d-flex align-items-center justify-content-center pb-3 gap-1">
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                </div>
+                                <h6>Raban Heinrich</h6>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="referenzen-cards text-center">
+                                <div>
+                                    <img src="assets/img/Mask group.png" alt="">
+                                </div>
+                                <div class="pt-4">
+                                    <p class="cards-p1">Dartera helped us to increase our revenue by more than 150%</p>
+                                    <p class="cards-p2 pt-3">Ker spitzen oompaloomp kaputt poopsie corkin underbite
+                                        haben
+                                        weiner, poopsie
+                                        keepin underbite
+                                        dummkopf ich thinken der der zur oompaloom.</p>
+                                </div>
+                                <div class="reviews d-flex align-items-center justify-content-center pb-3 gap-1">
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                </div>
+                                <h6>Raban Heinrich</h6>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="referenzen-cards text-center">
+                                <div>
+                                    <img src="assets/img/Mask group.png" alt="">
+                                </div>
+                                <div class="pt-4">
+                                    <p class="cards-p1">Dartera helped us to increase our revenue by more than 150%</p>
+                                    <p class="cards-p2 pt-3">Ker spitzen oompaloomp kaputt poopsie corkin underbite
+                                        haben
+                                        weiner, poopsie
+                                        keepin underbite
+                                        dummkopf ich thinken der der zur oompaloom.</p>
+                                </div>
+                                <div class="reviews d-flex align-items-center justify-content-center pb-3 gap-1">
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                </div>
+                                <h6>Raban Heinrich</h6>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="referenzen-cards text-center">
+                                <div>
+                                    <img src="assets/img/Mask group.png" alt="">
+                                </div>
+                                <div class="pt-4">
+                                    <p class="cards-p1">Dartera helped us to increase our revenue by more than 150%</p>
+                                    <p class="cards-p2 pt-3">Ker spitzen oompaloomp kaputt poopsie corkin underbite
+                                        haben
+                                        weiner, poopsie
+                                        keepin underbite
+                                        dummkopf ich thinken der der zur oompaloom.</p>
+                                </div>
+                                <div class="reviews d-flex align-items-center justify-content-center pb-3 gap-1">
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                </div>
+                                <h6>Raban Heinrich</h6>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="referenzen-cards text-center">
+                                <div>
+                                    <img src="assets/img/Mask group.png" alt="">
+                                </div>
+                                <div class="pt-4">
+                                    <p class="cards-p1">Dartera helped us to increase our revenue by more than 150%</p>
+                                    <p class="cards-p2 pt-3">Ker spitzen oompaloomp kaputt poopsie corkin underbite
+                                        haben
+                                        weiner, poopsie
+                                        keepin underbite
+                                        dummkopf ich thinken der der zur oompaloom.</p>
+                                </div>
+                                <div class="reviews d-flex align-items-center justify-content-center pb-3 gap-1">
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                </div>
+                                <h6>Raban Heinrich</h6>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="referenzen-cards text-center">
+                                <div>
+                                    <img src="assets/img/Mask group.png" alt="">
+                                </div>
+                                <div class="pt-4">
+                                    <p class="cards-p1">Dartera helped us to increase our revenue by more than 150%</p>
+                                    <p class="cards-p2 pt-3">Ker spitzen oompaloomp kaputt poopsie corkin underbite
+                                        haben
+                                        weiner, poopsie
+                                        keepin underbite
+                                        dummkopf ich thinken der der zur oompaloom.</p>
+                                </div>
+                                <div class="reviews d-flex align-items-center justify-content-center pb-3 gap-1">
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/fa-star.svg" alt="">
+                                    </div>
+                                </div>
+                                <h6>Raban Heinrich</h6>
+                                <p>Google</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="wieso">
+        <div class="container">
+            <div class="wieso-top text-center">
+                <h6 class="h6-custom">Wieso Dartera</h6>
+                <h2>Dartera, whatever it takes.</h2>
+                <p>Dafür werden wir geschätzt und das unterscheidet uns:</p>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-6">
+                    <div class="wieso-row-left">
+                        <p class="wiso-p-1">01</p>
+                        <h3>Whatever it takes</h3>
+                        <p class="wiso-p-2">Unser Versprechen an Sie ist unsere Arbeitsweise. Wir scheuen keine
+                            Anstrengungen, um Ihr Produkt
+                            fertigzustellen. Wir betrachten das Projekt erst dann als abgeschlossen, wenn Sie zufrieden
+                            sind.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="assets/img/wieso-img-1.svg" alt="">
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-6">
+                    <img src="assets/img/wieso-img-2.svg" alt="">
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="wieso-row-left">
+                        <p class="wiso-p-1">02</p>
+                        <h3>Übersichtlich ist das neue Gross</h3>
+                        <p class="wiso-p-2">Unser Versprechen an Sie ist unsere Arbeitsweise. Wir scheuen keine
+                            Anstrengungen, um Ihr Produkt fertigzustellen. Wir betrachten das Projekt erst dann als
+                            abgeschlossen, wenn Sie zufrieden sind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-6">
+                    <div class="wieso-row-left">
+                        <p class="wiso-p-1">03</p>
+                        <h3>Datenbasiert</h3>
+                        <p class="wiso-p-2">Wir treffen keine Bauchentscheidungen, sondern konzentrieren uns exklusiv
+                            auf Daten. Auf diese Weise erzielen wir einen hohen Return-on-Investment für alle unsere
+                            Kunden. Wir bieten eine strategische Perspektive, die von Agenturen oft übersehen wird.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="assets/img/wieso-img-3.svg" alt="">
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-6">
+                    <img src="assets/img/wieso-img-4.svg" alt="">
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="wieso-row-left">
+                        <p class="wiso-p-1">04</p>
+                        <h3>Aussergewöhnliche Talente</h3>
+                        <p class="wiso-p-2">Unser Versprechen an Sie ist unsere Arbeitsweise. Wir scheuen keine
+                            Anstrengungen, um Ihr Produkt
+                            fertigzustellen. Wir betrachten das Projekt erst dann als abgeschlossen, wenn Sie zufrieden
+                            sind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wieso-btns">
+                <div class="d-flex gap-3 justify-content-center mt-5">
+                    <div class="first-btn">
+                        <a href="">Entdecken <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
+                                    fill="#002448" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="second-btn">
+                        <a href="">Buchen Sie einen Rückruf <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
+                                    fill="#00F5EB" />
+                            </svg></a>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
     </section>
 
@@ -236,6 +826,8 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Script JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 
     <!-- <h1 class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="300ms">

@@ -114,7 +114,8 @@ h4 {
 }
 
 .nav-call:hover {
-    color: white;
+    color: #00BAEB;
+    transition: all .2s ease-in-out;
 }
 
 .navbar {
@@ -234,9 +235,10 @@ h4 {
 
 /* banner area end  */
 
-/* Dienstleistungen area  */
+/* Dienstleistungen area start  */
 .Dienstleistungen-wrapper {
     padding: 120px 0px;
+    background-color: #E8F3FF;
 }
 
 .web-right-col {
@@ -268,6 +270,179 @@ h4 {
     line-height: 28px;
 }
 
-.Maintenance-img {
-    width: 40%;
+.card {
+    padding: 30px 30px 65px 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 15px 30px 60px 0px rgba(0, 36, 72, 0.05);
+    border: 0;
 }
+
+.animation-card {
+    margin-top: 90px;
+}
+
+/* Dienstleistungen area end  */
+
+
+/* portfolio area start  */
+.portfolio-wrapper {
+    padding: 100px 0;
+}
+
+.portfolio-top h2 {
+    width: 50%;
+}
+
+.portfolio-banner {
+    padding: 60px 60px 60px 30px;
+    border-radius: 8px;
+    background: var(--secondary-color-system-thristle-purple-light, #F8EFFF);
+    gap: 110px;
+}
+
+.portfolio-1 {
+    color: var(--gray-color-system-gray-1, #002448);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    padding: 60px 0 60px 0;
+}
+
+.portfolio-2 {
+    color: var(--gray-color-system-gray-3, #57738F);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.portfolio-abs {
+    color: var(--gray-color-system-gray-1, #002448);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 36, 72, 0.10);
+    padding: 20px;
+    top: calc(88% - 40px);
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+
+
+}
+
+.portfolio-cards img {
+    border-radius: 10px;
+}
+
+.mySwiper {
+    padding-bottom: 56px;
+}
+
+/* portfolio area end  */
+
+/* Referenzen area start  */
+.Referenzen-top-h2 {
+    width: 540px;
+}
+
+.Referenzen-wrapper {
+    padding: 100px 0;
+    background: linear-gradient(180deg, rgba(232, 243, 255, 0.50) 0%, #E8F3FF 100%);
+}
+
+.cards-p1 {
+    color: var(--gray-color-system-gray-1, #002448);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.cards-p2 {
+    color: var(--gray-color-system-gray-2, #405A75);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.referenzen-cards {
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+
+
+
+}
+
+.refe-Swiper {
+    padding: 50px 0;
+}
+
+/* Referenzen area end  */
+
+/* wieso area start  */
+.wieso {
+    padding: 100px 0;
+}
+
+.wieso-top p {
+    color: var(--gray-color-system-gray-3, #57738F);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.wiso-p-1 {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 100px;
+    opacity: 0.1;
+    background: linear-gradient(180deg, #002448 0%, rgba(0, 36, 72, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wiso-p-2 {
+    color: var(--gray-color-system-gray-2, #405A75);
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.wieso-row-left {
+    margin: auto;
+}
+
+.banner-right {
+    position: relative;
+    border-radius: 150px 0 150px 0;
+    animation: shakeUp 3s infinite;
+}
+
+@keyframes shakeUp {
+    0% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(70px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* wieso area end  */
